@@ -36,13 +36,12 @@ public class Exercicio_3 {
 
                 qtdNota100 = valor / 100;
                 valor = valor % 100;
-                System.out.println("Quantidade de notas de 100: " + qtdNota100);
+
                 break;
 
             default:
                 qtdNota100 = valor / 100;
                 valor = valor % 100;
-                System.out.println("Quantidade de notas de 100: " + qtdNota100);
 
                 break;
         }
@@ -51,19 +50,19 @@ public class Exercicio_3 {
                 break;
 
             default:
-                
+
                 switch (valor % 50) {
                     case (0):
                         qtdNota50 = valor / 50;
                         valor = valor % 50;
-                        System.out.println("Quantidade de notas de 50: " + qtdNota50);
+
                         break;
 
                     default:
-                                qtdNota50 = valor / 50;
-                                valor = valor % 50;
-                                System.out.println("Quantidade de notas de 50: " + qtdNota50);
-                                break;
+                        qtdNota50 = valor / 50;
+                        valor = valor % 50;
+
+                        break;
                 }
                 switch (valor) {
                     case 0:
@@ -74,13 +73,13 @@ public class Exercicio_3 {
                             case (0):
                                 qtdNota20 = valor / 20;
                                 valor = valor % 20;
-                                System.out.println("Quantidade de notas de 20: " + qtdNota20);
+
                                 break;
 
                             default:
                                 qtdNota20 = valor / 20;
                                 valor = valor % 20;
-                                System.out.println("Quantidade de notas de 20: " + qtdNota20);
+
                                 break;
                         }
 
@@ -94,13 +93,13 @@ public class Exercicio_3 {
                             case (0):
                                 qtdNota10 = valor / 10;
                                 valor = valor % 10;
-                                System.out.println("Quantidade de notas de 10: " + qtdNota10);
+
                                 break;
 
                             default:
                                 qtdNota10 = valor / 10;
                                 valor = valor % 10;
-                                System.out.println("Quantidade de notas de 10: " + qtdNota10);
+
                                 break;
                         }
 
@@ -114,13 +113,13 @@ public class Exercicio_3 {
                             case (0):
                                 qtdNota5 = valor / 5;
                                 valor = valor % 5;
-                                System.out.println("Quantidade de notas de 5: " + qtdNota5);
+
                                 break;
 
                             default:
                                 qtdNota5 = valor / 5;
                                 valor = valor % 5;
-                                System.out.println("Quantidade de notas de 5: " + qtdNota5);
+
                                 break;
                         }
 
@@ -134,22 +133,58 @@ public class Exercicio_3 {
                             case (0):
                                 qtdNota1 = valor / 1;
                                 valor = valor % 1;
-                                System.out.println("Quantidade de notas de 1: " + qtdNota1);
+
                                 break;
 
                             default:
                                 qtdNota1 = valor / 1;
                                 valor = valor % 1;
-                                System.out.println("Quantidade de notas de 1: " + qtdNota1);
+
                                 break;
                         }
 
                 }
         }
-        entrada.close();
-        
-        // Noel é baitolão e gosta de ficar pendurado no peru do marretinha de mel...
+        switch (qtdNota100) {
+            case 0:
+                break;
+            default:
+                System.out.println("Quantidade de notas de 100: " + qtdNota100);
+        }
+        switch (qtdNota50) {
+            case 0:
+                break;
+            default:
+                System.out.println("Quantidade de notas de 50: " + qtdNota50);
+        }
+        switch (qtdNota20) {
+            case 0:
+                break;
+            default:
+                System.out.println("Quantidade de notas de 20: " + qtdNota20);
+        }
+        switch (qtdNota10) {
+            case 0:
+                break;
+            default:
+                System.out.println("Quantidade de notas de 10: " + qtdNota10);
+        }
+        switch (qtdNota5) {
+            case 0:
+                break;
+            default:
+                System.out.println("Quantidade de notas de 5: " + qtdNota5);
+        }
+        switch (qtdNota1) {
+            case 0:
+                break;
+            default:
+                System.out.println("Quantidade de notas de 1: " + qtdNota1);
+        }
 
+        entrada.close();
+
+        // Noel é baitolão e gosta de ficar pendurado no peru do marretinha de mel...
     }
 
 }
