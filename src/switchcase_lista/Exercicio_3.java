@@ -45,106 +45,77 @@ public class Exercicio_3 {
 
                 break;
         }
-        switch (valor) {
-            case 0:
+
+        switch (valor % 50) {
+            case (0):
+                qtdNota50 = valor / 50;
+                valor = valor % 50;
+
                 break;
 
             default:
+                qtdNota50 = valor / 50;
+                valor = valor % 50;
 
-                switch (valor % 50) {
-                    case (0):
-                        qtdNota50 = valor / 50;
-                        valor = valor % 50;
-
-                        break;
-
-                    default:
-                        qtdNota50 = valor / 50;
-                        valor = valor % 50;
-
-                        break;
-                }
-                switch (valor) {
-                    case 0:
-                        break;
-
-                    default:
-                        switch (valor % 20) {
-                            case (0):
-                                qtdNota20 = valor / 20;
-                                valor = valor % 20;
-
-                                break;
-
-                            default:
-                                qtdNota20 = valor / 20;
-                                valor = valor % 20;
-
-                                break;
-                        }
-
-                }
-                switch (valor) {
-                    case 0:
-                        break;
-
-                    default:
-                        switch (valor % 10) {
-                            case (0):
-                                qtdNota10 = valor / 10;
-                                valor = valor % 10;
-
-                                break;
-
-                            default:
-                                qtdNota10 = valor / 10;
-                                valor = valor % 10;
-
-                                break;
-                        }
-
-                }
-                switch (valor) {
-                    case 0:
-                        break;
-
-                    default:
-                        switch (valor % 5) {
-                            case (0):
-                                qtdNota5 = valor / 5;
-                                valor = valor % 5;
-
-                                break;
-
-                            default:
-                                qtdNota5 = valor / 5;
-                                valor = valor % 5;
-
-                                break;
-                        }
-
-                }
-                switch (valor) {
-                    case 0:
-                        break;
-
-                    default:
-                        switch (valor % 1) {
-                            case (0):
-                                qtdNota1 = valor / 1;
-                                valor = valor % 1;
-
-                                break;
-
-                            default:
-                                qtdNota1 = valor / 1;
-                                valor = valor % 1;
-
-                                break;
-                        }
-
-                }
+                break;
         }
+
+        switch (valor % 20) {
+            case (0):
+                qtdNota20 = valor / 20;
+                valor = valor % 20;
+
+                break;
+
+            default:
+                qtdNota20 = valor / 20;
+                valor = valor % 20;
+
+                break;
+        }
+
+        switch (valor % 10) {
+            case (0):
+                qtdNota10 = valor / 10;
+                valor = valor % 10;
+
+                break;
+
+            default:
+                qtdNota10 = valor / 10;
+                valor = valor % 10;
+
+                break;
+        }
+
+        switch (valor % 5) {
+            case (0):
+                qtdNota5 = valor / 5;
+                valor = valor % 5;
+
+                break;
+
+            default:
+                qtdNota5 = valor / 5;
+                valor = valor % 5;
+
+                break;
+        }
+
+        switch (valor % 1) {
+            case (0):
+                qtdNota1 = valor / 1;
+                valor = valor % 1;
+
+                break;
+
+            default:
+                qtdNota1 = valor / 1;
+                valor = valor % 1;
+
+                break;
+        }
+
         switch (qtdNota100) {
             case 0:
                 break;
@@ -184,7 +155,6 @@ public class Exercicio_3 {
 
         entrada.close();
 
-        // Noel é baitolão e gosta de ficar pendurado no peru do marretinha de mel...
     }
 
 }
