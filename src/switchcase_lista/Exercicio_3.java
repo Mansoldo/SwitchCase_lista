@@ -147,6 +147,8 @@ public class Exercicio_3 {
                 }
         }
         entrada.close();
+        
+        // Noel é baitolão e gosta de ficar pendurado no peru do marretinha de mel...
 
     }
 
